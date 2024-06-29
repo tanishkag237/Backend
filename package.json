@@ -2,9 +2,11 @@
   "name": "backend2",
   "version": "1.0.0",
   "description": "a backend for youtube",
+  "type":"module",
   "main": "index.js",
   "scripts": {
-    "start":"node index.js"
+    "dev":"nodemon src/index.js"
+  
   },
   "keywords": [
     "javascript",
@@ -12,4 +14,6 @@
   ],
   "author": "tg",
   "license": "ISC"
+  
+  
 }
