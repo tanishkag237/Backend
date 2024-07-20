@@ -16,4 +16,13 @@ app.use(express.static("public"))   //public file folder pdf access
 
 app.use(cookieParser())
 
+//routes import
+import router from "./routes/user.routes.js"
+
+//route declaration
+app.use("/api/v1/users",router)
+
+//https://loaclhost:8000/api/v1/users/*register
+// * konsa route call krna hai
+
 export {app}

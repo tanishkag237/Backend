@@ -1,7 +1,9 @@
 // try catch or promise.then and catch
 
+//helper file
+
 const asynhandler=(requestHandler)=>{
-    (req,res,next)=>{
+  return (req,res,next)=>{
         Promise.resolve(requestHandler(req,res,next)).catch((err)=>next(err))
     }
 }
